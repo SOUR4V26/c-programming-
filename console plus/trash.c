@@ -866,7 +866,7 @@ void writeZ (int r)
           }
         }    printf("\n");
 
-    }  printf("                                                                                                          Designed and Developed by ------------(TELEGATI DYNAMICS)------");
+    }  printf("                                                                                                          Designed and Developed by ------------(sourav MTE19)------");
        printf("\n                  ----------------------------------------------------------------------------------------------------------------------------------------------------------\n");
 }
 
