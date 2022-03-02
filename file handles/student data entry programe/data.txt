@@ -1,0 +1,183 @@
+                          INFORMATION FOR->sourav-paul
+
+
+NAME:- sourav-paul
+-----
+Institute Name:- khulna-university-of-engineering-and-technology
+---------------
+Roll:- 1931026
+-----
+Mobile No:- 01851633033
+----------
+
+
+ 
+                           INFORMATION FOR->riaz-ahmed
+
+
+NAME:- riaz-ahmed
+-----
+Institute Name:- khulna-university
+---------------
+Roll:- 1931026
+-----
+Mobile No:- 01851633033
+----------
+
+
+ 
+                           INFORMATION FOR->habib-vhai
+
+
+NAME:- habib-vhai
+-----
+Institute Name:- dhaka-university
+---------------
+Roll:- 65
+-----
+Mobile No:- 0187755231
+----------
+
+
+ 
+                           INFORMATION FOR->cd
+
+
+NAME:- cd
+-----
+Institute Name:- "f:\vs
+---------------
+Roll:- code\student
+-----
+Mobile No:- data
+----------
+
+
+ 
+                           INFORMATION FOR->entry
+
+
+NAME:- entry
+-----
+Institute Name:- programe\"
+---------------
+Roll:- ;
+-----
+Mobile No:- if
+----------
+
+
+ 
+                           INFORMATION FOR->($?)
+
+
+NAME:- ($?)
+-----
+Institute Name:- {
+---------------
+Roll:- gcc
+-----
+Mobile No:- bal.c
+----------
+
+
+ 
+                           INFORMATION FOR->-o
+
+
+NAME:- -o
+-----
+Institute Name:- bal
+---------------
+Roll:- }
+-----
+Mobile No:- ;
+----------
+
+
+ 
+                           INFORMATION FOR->if
+
+
+NAME:- if
+-----
+Institute Name:- ($?)
+---------------
+Roll:- {
+-----
+Mobile No:- .\bal
+----------
+
+
+ 
+                           INFORMATION FOR->cd
+
+
+NAME:- cd
+-----
+Institute Name:- "f:\vs
+---------------
+Roll:- code\student
+-----
+Mobile No:- data
+----------
+
+
+ 
+                           INFORMATION FOR->entry
+
+
+NAME:- entry
+-----
+Institute Name:- programe\"
+---------------
+Roll:- ;
+-----
+Mobile No:- if
+----------
+
+
+ 
+                           INFORMATION FOR->($?)
+
+
+NAME:- ($?)
+-----
+Institute Name:- {
+---------------
+Roll:- gcc
+-----
+Mobile No:- bal.c
+----------
+
+
+ 
+                           INFORMATION FOR->-o
+
+
+NAME:- -o
+-----
+Institute Name:- bal
+---------------
+Roll:- }
+-----
+Mobile No:- ;
+----------
+
+
+ 
+                           INFORMATION FOR->if
+
+
+NAME:- if
+-----
+Institute Name:- ($?)
+---------------
+Roll:- {
+-----
+Mobile No:- .\bal
+----------
+
+
+ 
+ 

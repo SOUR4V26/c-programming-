@@ -1,0 +1,71 @@
+
+THE INFORMATION FOR THE CANDIATE: 
+------------------------------------
+ name: sourav paul
+ age=25
+ company name:google_corporation
+ salary=4500 $
+
+
+ 
+ 
+THE INFORMATION FOR THE CANDIATE: 
+------------------------------------
+ name: naimul habib
+ age=24
+ company name:programming_hero
+ salary=450000 $
+
+
+ 
+ 
+THE INFORMATION FOR THE CANDIATE: 
+------------------------------------
+ name: cd "f:\vs code\file handles\file handles part4\" ; if ($?) { gcc fille4.c -o fille4 } ; if ($?) { .\fille4 }
+ age=0
+ company name:cd
+ salary=0 $
+
+
+ 
+ 
+THE INFORMATION FOR THE CANDIATE: 
+------------------------------------
+ name: cd "f:\vs code\file handles\file handles part4\" ; if ($?) { gcc fille4.c -o fille4 } ; if ($?) { .\fille4 }
+ age=0
+ company name:cd
+ salary=0 $
+
+
+ 
+ 
+THE INFORMATION FOR THE CANDIATE: 
+------------------------------------
+ name: sourav paul
+ age=25
+ company name:bekar
+ salary=4500 $
+
+
+ 
+ 
+THE INFORMATION FOR THE CANDIATE: 
+------------------------------------
+ name: sourav
+ age=25
+ company name:fuck
+ salary=4500 $
+
+
+ 
+ 
+THE INFORMATION FOR THE CANDIATE: 
+------------------------------------
+ name: cvbnmk
+ age=5
+ company name:vbnm,
+ salary=5 $
+
+
+ 
+ 
