@@ -886,7 +886,7 @@ void main ()
     writeintro();
     start:
     printf("\n\n");
-    printf("--[To quit taking input press(>> and enter key]----------------------|\n");
+    printf("--It can display 18 characters in a row ..After adding 18 chatacters please press enter:[To quit taking input press(>> and enter key]----------------------|\n");
     printf("---------------------------------------------------------------------------------------------|\n");
     printf("Input the text:\n");
     int i=0,nL1=0,nL2=0;;
