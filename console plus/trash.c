@@ -300,7 +300,6 @@ void writeP (int r)
 
 }
 
-
 //for letter Q
 
 void writeQ (int r)
