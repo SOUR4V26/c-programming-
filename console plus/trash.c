@@ -886,7 +886,7 @@ void main ()
     writeintro();
     start:
     printf("\n\n");
-    printf("please avoid space !    --[To quit taking input press(>> and enter key]----------------------|\n");
+    printf("--[To quit taking input press(>> and enter key]----------------------|\n");
     printf("---------------------------------------------------------------------------------------------|\n");
     printf("Input the text:\n");
     int i=0,nL1=0,nL2=0;;
