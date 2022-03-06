@@ -1,32 +1,33 @@
 #include<stdio.h>
 #include<windows.h>
 #include <unistd.h>
+#include <string.h>
+int font_style =244 ;
+
+//font color
+void Black()   {printf("\033[1;30m");} 
+void red()     {printf("\033[1;31m");}
+void green()   {printf("\033[1;32m");}
+void yellow()  {printf("\033[1;33m");}
+void blue()    {printf("\033[1;34m");} 
+void purple()  {printf("\033[1;35m");}
+void cyan()    {printf("\033[1;36m");}
+void white()   {printf("\033[1;37m");}
+
 
 //for letter A
 
 void writeA (int r)
 {
-    int c;
+    int c;red();
 
         for(c=1;c<=9;c++)
         {
-          if((r==3||r==4||r==6||r==7||r==8||r==9)&&(c==1||c==2||c==8||c==9))
-          {
-            printf("%c",222);
-          }
-         else if((r==1)&&(c==3||c==4||c==5||c==6||c==7))
-         {
-             printf("%c",222);
-         }
-         else if((r==2)&&(c==2||c==3||c==4||c==5||c==6||c==7||c==8))
-         {
-             printf("%c",222);
-         }
-         else if((r==5||r==6)&&c<=9)
-         {
-             printf("%c",222);
-         }
-         else printf(" ");
+          if((r==3||r==4||r==6||r==7||r==8||r==9)&&(c==1||c==2||c==8||c==9))  printf("%c",font_style);
+          else if((r==1)&&(c==3||c==4||c==5||c==6||c==7)) printf("%c",font_style);
+          else if((r==2)&&(c==2||c==3||c==4||c==5||c==6||c==7||c==8)) printf("%c",font_style);
+          else if((r==5||r==6)&&c<=9) printf("%c",font_style);
+          else printf(" ");
         }
 }
 
@@ -34,22 +35,13 @@ void writeA (int r)
 
 void writeB (int r)
 {
-    int c;
-   for(c=1;c<=7;c++)
+    int c;green();
+       for(c=1;c<=7;c++)
         {
-          if((r==3||r==4||r==6||r==7)&&(c==1||c==2||c==6||c==7))
-          {
-            printf("%c",222);
-          }
-         else if((r==2||r==8)&&c<=7)
-         {
-             printf("%c",222);
-         }
-         else if((r==1||r==5||r==9)&&c<=6)
-         {
-             printf("%c",222);
-         }
-         else printf(" ");
+          if((r==3||r==4||r==6||r==7)&&(c==1||c==2||c==6||c==7)) printf("%c",font_style);
+          else if((r==2||r==8)&&c<=7) printf("%c",font_style);
+          else if((r==1||r==5||r==9)&&c<=6) printf("%c",font_style);
+          else printf(" ");
         }
 }
 
@@ -57,22 +49,13 @@ void writeB (int r)
 
 void writeC (int r)
 {
-    int c;
+    int c;blue();
 
         for(c=1;c<=9;c++)
         {
-          if((r==3||r==4|r==5||r==6||r==7)&&(c==1||c==2))
-          {
-            printf("%c",222);
-          }
-         else if((r==2||r==8)&&c<=9)
-         {
-             printf("%c",222);
-         }
-         else if((r==1||r==9)&&(c==2||c==3||c==4||c==5||c==6||c==7||c==8||c==9))
-         {
-             printf("%c",222);
-         }
+         if((r==3||r==4|r==5||r==6||r==7)&&(c==1||c==2))printf("%c",font_style);   
+         else if((r==2||r==8)&&c<=9) printf("%c",font_style);
+         else if((r==1||r==9)&&(c==2||c==3||c==4||c==5||c==6||c==7||c==8||c==9)) printf("%c",font_style);
          else printf(" ");
         }
 
@@ -83,22 +66,13 @@ void writeC (int r)
 
 void writeD (int r)
 {
-    int c;
+    int c;yellow();
 
         for(c=1;c<=9;c++)
         {
-          if((r==3||r==4||r==5||r==6||r==7)&&(c==1||c==2||c==8||c==9))
-          {
-            printf("%c",222);
-          }
-         else if((r==2||r==8)&&c<=8)
-         {
-             printf("%c",222);
-         }
-         else if((r==1||r==9)&&c<=7)
-         {
-             printf("%c",222);
-         }
+         if((r==3||r==4||r==5||r==6||r==7)&&(c==1||c==2||c==8||c==9)) printf("%c",font_style);
+         else if((r==2||r==8)&&c<=8) printf("%c",font_style);
+         else if((r==1||r==9)&&c<=7)printf("%c",font_style);
          else printf(" ");
         }
 
@@ -109,27 +83,15 @@ void writeD (int r)
 
 void writeE (int r)
 {
-    int c;
+    int c;cyan();
 
         for(c=1;c<=9;c++)
         {
-          if((r==1||r==2||r==8||r==9)&&(c<=9))
-          {
-            printf("%c",222);
-          }
-         else if((r==3||r==7)&&(c==1||c==2))
-         {
-             printf("%c",222);
-         }
-         else if((r==4||r==6)&&(c==1||c==2||c==7))
-         {
-             printf("%c",222);
-         }
-         else if((r==5)&&c<=7)
-         {
-             printf("%c",222);
-         }
-         else printf(" ");
+          if((r==1||r==2||r==8||r==9)&&(c<=9)) printf("%c",font_style);
+          else if((r==3||r==7)&&(c==1||c==2)) printf("%c",font_style);
+          else if((r==4||r==6)&&(c==1||c==2||c==7))printf("%c",font_style);
+          else if((r==5)&&c<=7) printf("%c",font_style);
+          else printf(" ");
         }
 
 }
@@ -139,27 +101,15 @@ void writeE (int r)
 
 void writeF (int r)
 {
-    int c;
+    int c;purple();
 
         for(c=1;c<=9;c++)
         {
-          if((r==1||r==2)&&(c<=9))
-          {
-            printf("%c",222);
-          }
-         else if((r==3||r==7||r==8||r==9)&&(c==1||c==2))
-         {
-             printf("%c",222);
-         }
-         else if((r==4||r==6)&&(c==1||c==2||c==7))
-         {
-             printf("%c",222);
-         }
-         else if((r==5)&&c<=7)
-         {
-             printf("%c",222);
-         }
-         else printf(" ");
+          if((r==1||r==2)&&(c<=9)) printf("%c",font_style);
+          else if((r==3||r==7||r==8||r==9)&&(c==1||c==2)) printf("%c",font_style);
+          else if((r==4||r==6)&&(c==1||c==2||c==7))printf("%c",font_style);
+          else if((r==5)&&c<=7)  printf("%c",font_style);        
+          else printf(" ");
         }
 
 }
@@ -169,27 +119,14 @@ void writeF (int r)
 
 void writeG (int r)
 {
-    int c;
+    int c;white();
 
         for(c=1;c<=9;c++)
-        {
-          if((r==1||r==2||r==8||r==9)&&(c<=9))
-          {
-           printf("%c",222);
-          }
-         else if((r==3||r==4)&&(c==1||c==2))
-         {
-          printf("%c",222);
-         }
-         else if((r==7)&&(c==1||c==2||c==9||c==8))
-         {
-          printf("%c",222);
-         }
-         else if((r==5||r==6)&&(c==1||c==2||c==6||c==7||c==8||c==9))
-         {
-          printf("%c",222);
-         }
-
+        { 
+         if((r==1||r==2||r==8||r==9)&&(c<=9)) printf("%c",font_style);
+         else if((r==3||r==4)&&(c==1||c==2)) printf("%c",font_style);
+         else if((r==7)&&(c==1||c==2||c==9||c==8))printf("%c",font_style);
+         else if((r==5||r==6)&&(c==1||c==2||c==6||c==7||c==8||c==9)) printf("%c",font_style);
          else printf(" ");
         }
 
@@ -201,20 +138,13 @@ void writeG (int r)
 
 void writeH (int r)
 {
-    int c;
+    int c;red();
 
         for(c=1;c<=9;c++)
         {
-          if((r==1||r==2||r==3||r==4||r==7||r==8||r==9)&&(c==1||c==2||c==8||c==9))
-          {
-            printf("%c",222);
-          }
-
-         else if((r==6||r==5)&&c<=9)
-         {
-             printf("%c",222);
-         }
-         else printf(" ");
+          if((r==1||r==2||r==3||r==4||r==7||r==8||r==9)&&(c==1||c==2||c==8||c==9))  printf("%c",font_style);
+          else if((r==6||r==5)&&c<=9) printf("%c",font_style);
+          else printf(" ");
         }
 
 
@@ -225,20 +155,13 @@ void writeH (int r)
 
 void writeI (int r)
 {
-    int c;
+    int c;purple();
 
         for(c=1;c<=9;c++)
         {
-          if((r==1||r==2||r==8||r==9)&&(c<=9))
-          {
-            printf("%c",222);
-          }
-
-         else if((r==3||r==4||r==5||r==6||r==7)&&(c==4||c==5||c==6))
-         {
-             printf("%c",222);
-         }
-         else printf(" ");
+          if((r==1||r==2||r==8||r==9)&&(c<=9)) printf("%c",font_style);
+          else if((r==3||r==4||r==5||r==6||r==7)&&(c==4||c==5||c==6)) printf("%c",font_style);
+          else printf(" ");
         }
 
 
@@ -249,28 +172,18 @@ void writeI (int r)
 
 void writeJ (int r)
 {
-    int c;
+    int c;cyan();
 
         for(c=1;c<=9;c++)
         {
-          if((r==1||r==2)&&(c<=9))
-          {
-            printf("%c",222);
-          }
-
-         else if((r==3||r==4||r==5)&&(c==8||c==9))
-         {
-             printf("%c",222);
-         }
-         else if((r==6)&&(c==4||c==5||c==8||c==9))
-         {
-             printf("%c",222);
-         }
-         else if((r==7||r==8)&&(c==5||c==6||c==7||c==8||c==9))
-         {
-             printf("%c",222);
-         }
-         else printf(" ");
+          if((r==1||r==2)&&(c<=9)) printf("%c",font_style);
+          else if((r==3||r==4||r==5)&&(c==8||c==9)) printf("%c",font_style);
+          else if((r==6)&&(c==1||c==2||c==3||c==4||c==8||c==9)) printf("%c",font_style);
+          else if((r==7)&&(c==2||c==3||c==8||c==9))printf("%c",font_style);
+          else if((r==8||r==9)&&(c==2||c==3||c==4||c==5||c==6||c==7||c==8||c==9)) printf("%c",font_style);
+          
+          
+          else printf(" ");
         }
 
 
@@ -281,28 +194,16 @@ void writeJ (int r)
 
 void writeK (int r)
 {
-    int c;
+    int c;yellow();
 
-        for(c=1;c<=9;c++)
+        for(c=1;c<=8;c++)
         {
-          if((r==4||r==5||r==6)&&(c<=4))
-          {
-            printf("%c",222);
-          }
-
-         else if((r==3||r==7)&&(c==1||c==2||c==4||c==5))
-         {
-             printf("%c",222);
-         }
-         else if((r==2||r==8)&&(c==1||c==2||c==5||c==6))
-         {
-             printf("%c",222);
-         }
-         else if((r==1||r==9)&&(c==1||c==2||c==6))
-         {
-             printf("%c",222);
-         }
-         else printf(" ");
+          if((r==4||r==6)&&(c<=3)) printf("%c",font_style);
+          else if((r==3||r==7)&&(c==1||c==2||c==4||c==5))printf("%c",font_style);
+          else if((r==2||r==8)&&(c==1||c==2||c==5||c==6)) printf("%c",font_style);
+          else if((r==1||r==9)&&(c==1||c==2||c==6||c==7))  printf("%c",font_style);
+          else if((r==5)&&(c==1||c==2)) printf("%c",font_style);
+          else printf(" ");
         }
 
 
@@ -313,19 +214,13 @@ void writeK (int r)
 
 void writeL (int r)
 {
-    int c;
+    int c;green();
 
         for(c=1;c<=9;c++)
         {
-          if(r<=7&&c<=2)
-          {
-              printf("%c",222);
-          }
-          else if((r==8||r==9)&&c<=9)
-          {
-              printf("%c",222);
-          }
-         else printf(" ");
+          if(r<=7&&c<=2)printf("%c",font_style);
+          else if((r==8||r==9)&&c<=9) printf("%c",font_style);
+          else printf(" ");
         }
 
 
@@ -336,36 +231,16 @@ void writeL (int r)
 
 void writeM (int r)
 {
-    int c;
+    int c;red();
     for(c=1;c<=9;c++)
         {
-          if(r==1 &&(c==1||c==2||c==8||c==9))
-          {
-              printf("%c",222);
-          }
-          else if((r==2)&&(c==1||c==2||c==3||c==7||c==8||c==9))
-          {
-              printf("%c",222);
-          }
-          else if((r==3)&&(c==1||c==2||c==3||c==4||c==6||c==8||c==7||c==9))
-          {
-              printf("%c",222);
-          }
-          else if((r==4)&&(c==1||c==2||c==4||c==5||c==6||c==8||c==9))
-          {
-
-              printf("%c",222);
-          }
-          else if((r==5)&&(c==1||c==2||c==5||c==8||c==9))
-          {
-                 printf("%c",222);
-               
-          }
-         else if((r==6||r==7||r==8||r==9)&&(c==1||c==2||c==8||c==9))
-         {
-             printf("%c",222);
-         }
-         else printf(" ");
+          if(r==1 &&(c==1||c==2||c==8||c==9)) printf("%c",font_style);
+          else if((r==2)&&(c==1||c==2||c==3||c==7||c==8||c==9))  printf("%c",font_style);
+          else if((r==3)&&(c==1||c==2||c==3||c==4||c==6||c==8||c==7||c==9))printf("%c",font_style);
+          else if((r==4)&&(c==1||c==2||c==4||c==5||c==6||c==8||c==9)) printf("%c",font_style);
+          else if((r==5)&&(c==1||c==2||c==5||c==8||c==9))printf("%c",font_style);
+          else if((r==6||r==7||r==8||r==9)&&(c==1||c==2||c==8||c==9))printf("%c",font_style);
+          else printf(" ");
         }
 
 }
@@ -375,39 +250,17 @@ void writeM (int r)
 
 void writeN(int r)
 {
-    int c;
+    int c;red();
       for(c=1;c<=9;c++)
         {
-          if((r==1||r==8||r==9)&&(c==1||c==2||c==8||c==9))
-          {
-            printf("%c",222);
-
-          }
-          else if(r==7&&(c==1||c==2||c==7||c==8||c==9))
-          {
-              printf("%c",222);
-          }
-          else if(r==6&&(c==1||c==2||c==6||c==7||c==8||c==9))
-          {
-              printf("%c",222);
-          }
-          else if(r==5&&(c==1||c==2||c==5||c==6||c==8||c==9))
-          {
-              printf("%c",222);
-          }
-          else if(r==4&&(c==1||c==2||c==4||c==5||c==8||c==9))
-          {
-              printf("%c",222);
-          }
-          else if(r==3&&(c==1||c==2||c==3||c==4||c==8||c==9))
-          {
-              printf("%c",222);
-          }
-          else if(r==2&&(c==1||c==2||c==3||c==8||c==9))
-          {
-              printf("%c",222);
-          }
-         else printf(" ");
+          if((r==1||r==8||r==9)&&(c==1||c==2||c==8||c==9)) printf("%c",font_style);
+          else if(r==7&&(c==1||c==2||c==7||c==8||c==9))printf("%c",font_style);
+          else if(r==6&&(c==1||c==2||c==6||c==7||c==8||c==9)) printf("%c",font_style);
+          else if(r==5&&(c==1||c==2||c==5||c==6||c==8||c==9)) printf("%c",font_style);
+          else if(r==4&&(c==1||c==2||c==4||c==5||c==8||c==9)) printf("%c",font_style);
+          else if(r==3&&(c==1||c==2||c==3||c==4||c==8||c==9)) printf("%c",font_style);
+          else if(r==2&&(c==1||c==2||c==3||c==8||c==9)) printf("%c",font_style);
+          else printf(" ");
         }
 
 }
@@ -418,20 +271,13 @@ void writeN(int r)
 
 void writeO (int r)
 {
-    int c;
+    int c;white();
 
         for(c=1;c<=9;c++)
         {
-          if((r==3||r==4||r==5||r==6||r==7)&&(c==1||c==2||c==8||c==9))
-          {
-            printf("%c",222);
-          }
-         else if((r==1||r==2||r==8||r==9)&&c<=9)
-         {
-             printf("%c",222);
-         }
-
-         else printf(" ");
+          if((r==3||r==4||r==5||r==6||r==7)&&(c==1||c==2||c==8||c==9))printf("%c",font_style);
+          else if((r==1||r==2||r==8||r==9)&&c<=9)printf("%c",font_style);
+          else printf(" ");
         }
 
 }
@@ -440,31 +286,16 @@ void writeO (int r)
 
 void writeP (int r)
 {
-    int c;
+    int c;cyan();
 
         for(c=1;c<=9;c++)
         {
-          if(r==1&&c<=5)
-          {
-              printf("%c",222);
-          }
-          else if((r==2||r==6)&&c<=6)
-          {
-              printf("%c",222);
-          }
-          else if((r==3||r==4)&&(c==1||c==2||c==6||c==7))
-          {
-              printf("%c",222);
-          }
-          else if(r==5&&c<=7)
-          {
-              printf("%c",222);
-          }
-          else if((r==7||r==8||r==9)&&(c==1||c==2))
-          {
-              printf("%c",222);
-          }
-         else printf(" ");
+          if(r==1&&c<=5)printf("%c",font_style);
+          else if((r==2||r==6)&&c<=6)  printf("%c",font_style);
+          else if((r==3||r==4)&&(c==1||c==2||c==6||c==7))  printf("%c",font_style);
+          else if(r==5&&c<=7) printf("%c",font_style);
+          else if((r==7||r==8||r==9)&&(c==1||c==2)) printf("%c",font_style); 
+          else printf(" ");
         }
 
 }
@@ -474,31 +305,16 @@ void writeP (int r)
 
 void writeQ (int r)
 {
-    int c;
+    int c;purple();
 
         for(c=1;c<=9;c++)
         {
-          if((r==3||r==4||r==7)&&(c==1||c==2||c==8||c==9))
-          {
-            printf("%c",222);
-          }
-         else if((r==1||r==2||r==7||r==8)&&c<=9)
-         {
-             printf("%c",222);
-         }
-         else if(r==9&&(c==7||c==8))
-          {
-              printf("%c",222);
-          }
-          else if(r==5&&(c==1||c==2||c==4||c==5||c==8||c==9))
-          {
-              printf("%c",222);
-          }
-          else if(r==6&&(c==1||c==2||c==5||c==6||c==8||c==9))
-          {
-              printf("%c",222);
-          }
-         else printf(" ");
+          if((r==3||r==4||r==7)&&(c==1||c==2||c==8||c==9)) printf("%c",font_style);
+          else if((r==1||r==2||r==7||r==8)&&c<=9) printf("%c",font_style);
+          else if(r==9&&(c==7||c==8)) printf("%c",font_style);
+          else if(r==5&&(c==1||c==2||c==4||c==5||c==8||c==9)) printf("%c",font_style);
+          else if(r==6&&(c==1||c==2||c==5||c==6||c==8||c==9)) printf("%c",font_style);       
+          else printf(" ");
         }
 
 }
@@ -508,31 +324,16 @@ void writeQ (int r)
 
 void writeR (int r)
 {
-    int c;
+    int c;purple();
 
-        for(c=1;c<=9;c++)
+        for(c=1;c<=8;c++)
         {
-          if(r==1 && c<=5)
-          {
-              printf("%c",222);
-          }
-          else if((r==2||r==6)&&c<=6)
-          {
-              printf("%c",222);
-          }
-          else if((r==3||r==4)&&(c==1||c==2||c==6||c==7))
-          {
-              printf("%c",222);
-          }
-          else if(r==5&&c<=7)
-          {
-              printf("%c",222);
-          }
-          else if((r==7||r==8||r==9)&&(c==1||c==2||c==6||c==7))
-          {
-              printf("%c",222);
-          }
-         else printf(" ");
+          if(r==1 && c<=5) printf("%c",font_style);
+          else if((r==2||r==6)&&c<=6)printf("%c",font_style);
+          else if((r==3||r==4)&&(c==1||c==2||c==6||c==7)) printf("%c",font_style);
+          else if(r==5&&c<=7) printf("%c",font_style);
+          else if((r==7||r==8||r==9)&&(c==1||c==2||c==6||c==7))  printf("%c",font_style);
+          else printf(" ");
         }
 
 }
@@ -542,24 +343,14 @@ void writeR (int r)
 
 void writeS (int r)
 {
-    int c;
+    int c;blue();
 
         for(c=1;c<=9;c++)
         {
-          if((r==3||r==4)&&(c<=2))
-          {
-            printf("%c",222);
-          }
-         else if((r==1||r==2||r==8||r==9||r==6||r==5)&&c<=9)
-         {
-             printf("%c",222);
-         }
-         else if(r==7&&(c==8||c==9))
-         {
-           printf("%c",222);
-         }
-
-         else printf(" ");
+          if((r==3||r==4)&&(c<=2)) printf("%c",font_style);
+          else if((r==1||r==2||r==8||r==9||r==6||r==5)&&c<=9) printf("%c",font_style);
+          else if(r==7&&(c==8||c==9)) printf("%c",font_style);
+          else printf(" ");
         }
 
 
@@ -569,18 +360,12 @@ void writeS (int r)
 
 void writeT (int r)
 {
-    int c;
+    int c;blue();
 
         for(c=1;c<=9;c++)
         {
-         if(r<=2&&c<=9)
-         {
-             printf("%c",222);
-         }
-         else if(r<=9&&(c==4||c==5))
-         {
-             printf("%c",222);
-         }
+         if(r<=2&&c<=9) printf("%c",font_style);
+         else if(r<=9&&(c==4||c==5))printf("%c",font_style);
          else printf(" ");
         }
 
@@ -592,23 +377,14 @@ void writeT (int r)
 
 void writeU (int r)
 {
-    int c;
+    int c; purple();
 
         for(c=1;c<=9;c++)
         {
-          if((r<=7)&&(c==1||c==2||c==8||c==9))
-           {
-            printf("%c",222);
-           }
-          else if((r==8)&&(c==2||c==3||c==4||c==5||c==6||c==7||c==8))
-           {
-             printf("%c",222);
-           }
-          else if(r==9 &&(c==3||c==4||c==4||c==5||c==6||c==7))
-           {
-             printf("%c",222);
-           }
-         else printf(" ");
+          if((r<=7)&&(c==1||c==2||c==8||c==9))printf("%c",font_style);
+          else if((r==8)&&(c==2||c==3||c==4||c==5||c==6||c==7||c==8)) printf("%c",font_style);
+          else if(r==9 &&(c==3||c==4||c==4||c==5||c==6||c==7))  printf("%c",font_style); 
+          else printf(" ");
         }
 }
 
@@ -619,32 +395,17 @@ void writeU (int r)
 
 void writeV (int r)
 {
-    int c;
+    int c;green();
 
 
         for(c=1;c<=9;c++)
         {
-          if((r<=5)&&(c==1||c==2||c==8||c==9))
-           {
-            printf("%c",222);
-          }
-         else if((r==6)&&(c==2||c==3||c==7||c==8))
-         {
-             printf("%c",222);
-         }
-         else if(r==7 &&(c==3||c==4||c==6||c==7))
-         {
-             printf("%c",222);
-         }
-         else if(r==8&&(c==4||c==6))
-         {
-             printf("%c",222);
-         }
-         else if(r==9&&c==5)
-         {
-             printf("%c",222);
-         }
-         else printf(" ");
+          if((r<=5)&&(c==1||c==2||c==8||c==9)) printf("%c",font_style);
+          else if((r==6)&&(c==2||c==3||c==7||c==8)) printf("%c",font_style);
+          else if(r==7 &&(c==3||c==4||c==6||c==7)) printf("%c",font_style);
+          else if(r==8&&(c==4||c==6)) printf("%c",font_style);
+          else if(r==9&&c==5) printf("%c",font_style);
+          else printf(" ");
         }
 
 
@@ -658,25 +419,18 @@ void writeV (int r)
 
 void writeW (int r)
 {
-    int c,i;
+    int c,i;cyan();
 
     for(i=1;i<=2;i++)
     {
         for(c=1;c<=9;c++)
         {
-          if((r<=7)&&(c==1||c==2||c==8||c==9))
-          {
-            printf("%c",222);
-          }
-         else if((r==8)&&(c==2||c==3||c==4||c==5||c==6||c==7||c==8))
-         {
-             printf("%c",222);
-         }
-         else if(r==9 &&(c==3||c==4||c==4||c==5||c==6||c==7))
-         {
-             printf("%c",222);
-         }
-         else printf(" ");
+          if((r<=7)&&(c==1||c==9)&&(i==2)) printf("%c",font_style);
+         else if((r<=7)&&(c==1||c==2||c==8||c==9)) printf("%c",font_style);
+
+          else if((r==8)&&(c<=9)) printf("%c",font_style);
+          else if(r==9 &&(c<=9)) printf("%c",font_style);
+          else printf(" ");
         }
      }
 
@@ -688,35 +442,17 @@ void writeW (int r)
 
 void writeX (int r)
 {
-    int c;
+    int c;red();
 
          for(c=1;c<=9;c++)
         {
-          if((r==1||r==9)&&(c==1||c==2||c==9))
-          {
-              printf("%c",222);
-          }
-          else if((r==2||r==8)&&(c==2||c==3||c==8||c==9))
-          {
-              printf("%c",222);
-          }
-          else if((r==3||r==7)&&(c==3||c==4||c==7||c==8))
-          {
-              printf("%c",222);
-          }
-          else if((r==4||r==7)&&(c==4||c==3||c==7||c==8))
-          {
-              printf("%c",222);
-          }
-          else if(r==5&&(c==5||c==6))
-          {
-              printf("%c",222);
-          }
-          else if(r==6&&(c==4||c==5||c==6||c==7))
-          {
-              printf("%c",222);
-          }
-         else printf(" ");
+          if((r==1||r==9)&&(c==1||c==2||c==9)) printf("%c",font_style);
+          else if((r==2||r==8)&&(c==2||c==3||c==8||c==9)) printf("%c",font_style);
+          else if((r==3||r==7)&&(c==3||c==4||c==7||c==8)) printf("%c",font_style);
+          else if((r==4||r==7)&&(c==4||c==3||c==7||c==8)) printf("%c",font_style);
+          else if(r==5&&(c==5||c==6)) printf("%c",font_style);
+          else if(r==6&&(c==4||c==5||c==6||c==7)) printf("%c",font_style);
+          else printf(" ");
 
       }
 }
@@ -725,32 +461,16 @@ void writeX (int r)
 
 void writeY (int r)
 {
-    int c;
+    int c;purple();
 
         for(c=1;c<=9;c++)
         {
-          if((r==1)&&(c==1||c==2||c==9))
-          {
-              printf("%c",222);
-          }
-          else if((r==2)&&(c==2||c==3||c==8||c==9))
-          {
-              printf("%c",222);
-          }
-          else if((r==3)&&(c==3||c==4||c==7||c==8))
-          {
-              printf("%c",222);
-          }
-          else if((r==4)&&(c==4||c==5||c==6||c==7))
-          {
-              printf("%c",222);
-          }
-          else if((r==5||r==6||r==7||r==8||r==9)&&(c==5||c==6))
-          {
-                printf("%c",222);
-          }
-
-         else printf(" ");
+          if((r==1)&&(c==1||c==9)) printf("%c",font_style);
+          else if((r==2)&&(c==2||c==3||c==8||c==9)) printf("%c",font_style);
+          else if((r==3)&&(c==3||c==4||c==7||c==8)) printf("%c",font_style);
+          else if((r==4)&&(c==4||c==5||c==6||c==7)) printf("%c",font_style);
+          else if((r==5||r==6||r==7||r==8||r==9)&&(c==5||c==6)) printf("%c",font_style);
+          else printf(" ");
 
         }
 }
@@ -760,40 +480,19 @@ void writeY (int r)
 
 void writeZ (int r)
 {
-    int c;
+    int c;blue();
 
 
          for(c=1;c<=9;c++)
         {
-          if((r==1||r==2||r==9)&&(c<=9))
-         {
-             printf("%c",222);
-         }
-         else if(r==3 &&(c==7||c==8))
-         {
-             printf("%c",222);
-         }
-         else if(r== 4&&(c==6||c==7))
-         {
-             printf("%c",222);
-         }
-         else if (r==5 &&(c==5||c==6))
-         {
-             printf("%c",222);
-         }
-         else if(r==6 &&(c==4||c==5))
-         {
-             printf("%c",222);
-         }
-         else if(r==7 &&(c==3||c==4))
-         {
-             printf("%c",222);
-         }
-         else if(r==8 &&(c<=9))
-         {
-             printf("%c",222);
-         }
-            else printf(" ");
+          if((r==1||r==2||r==9)&&(c<=9)) printf("%c",font_style);
+          else if(r==3 &&(c==7||c==8)) printf("%c",font_style);
+          else if(r== 4&&(c==6||c==7)) printf("%c",font_style);
+          else if (r==5 &&(c==5||c==6)) printf("%c",font_style);
+          else if(r==6 &&(c==4||c==5)) printf("%c",font_style);
+          else if(r==7 &&(c==3||c==4)) printf("%c",font_style);
+          else if(r==8 &&(c<=9)) printf("%c",font_style);
+          else printf(" ");
         }
 }
 
@@ -819,55 +518,24 @@ void writeZ (int r)
     {
         for(k=1;k<=13;k++)         // this loop print the patteRn horizontally
        {   
-           if(k<=2)
-         {
-           printf("      "); writegap(row);
-         }
-
-         else if(k==3)
-         {
-            printf("  "); writeC(row);
-         }
-
-         else if(k==4)
-          {
-             printf("  "); writeO(row);
-          }
-          else if(k==5)
-          {
-             printf("  "); writeN(row);
-          }
-          else if(k==6)
-          {
-             printf("  "); writeS(row);
-          }
-          else if(k==7)
-          {
-              printf("  ");writeO(row);
-          }else if(k==8)
-          {
-              printf("  ");writeL(row);
-          }else if(k==9)
-          {
-              printf("  ");writeE(row);writegap(row);
-          }else if(k==10)
-          {
-              printf("  ");writeP(row);
-          }else if(k==11)
-          {
-              printf("  ");writeL(row);
-          }else if(k==12)
-          {
-              printf("  ");writeU(row);
-          }
-          else if(k==13)
-          {
-              printf("  ");writeS(row);
-          }
+           if(k<=2){        printf("      "); writegap(row);}
+           else if(k==3){   printf("  ");writeC(row);}
+           else if(k==4){   printf("  "); writeO(row);}
+           else if(k==5){   printf("  "); writeN(row);}
+           else if(k==6){   printf("  "); writeS(row);}
+           else if(k==7){   printf("  ");writeO(row);}
+           else if(k==8){   printf("  ");writeL(row);}
+           else if(k==9){   printf("  ");writeE(row);writegap(row);}
+           else if(k==10){  printf("  ");writeP(row);}
+           else if(k==11){  printf("  ");writeL(row);}
+           else if(k==12){  printf("  ");writeU(row);}
+           else if(k==13){  printf("  ");writeS(row);}
+       
         }    printf("\n");
 
-    }  printf("                                                                                                          Designed and Developed by ------------(sourav MTE19)------");
-       printf("\n                  ----------------------------------------------------------------------------------------------------------------------------------------------------------\n");
+    }red();  printf("                                                                                                           ------------(SOURAV  MTE 2K19)------");
+      white(); printf("\n                  ----------------------------------------------------------------------------------------------------------------------------------------------------------\n");
+      red();printf("\nIt can display 18 characters in a row. Please make sure that you entered less than 18 chatacters,if your line exceed 18 character then press enter at end of the suitable words(^_^)");white();
 }
 
 
@@ -880,15 +548,20 @@ void main ()
 {   int k;
     int row=1;
     char str[1024];
-    int check=0;
+    int check=0;int font;
     //intro part
-    system("color 0A");
     writeintro();
+    
+    printf("\n\n");printf("\033[1;32m");
+    printf("please avoid special types of characters ! --[To quit taking input press(>> and enter key]----------------------|\n");
+    printf("\033[1;36m"); printf("---------------------------------------------------------------------------------------------|\n");
     start:
-    printf("\n\n");
-    printf("--It can display 18 characters in a row ..After adding 18 chatacters please press enter:[To quit taking input press(>> and enter key]----------------------|\n");
-    printf("---------------------------------------------------------------------------------------------|\n");
-    printf("Input the text:\n");
+    purple(); printf("you can choose any font style in [1-255] range.. some good fonts are [176,177,178,219,220,223,254]");
+    green(); printf("\n\nselect the font format:");white(); 
+    scanf("%d",&font); font_style=font;
+    
+     printf("\033[1;33m"); printf("Input the text:\n");white();
+
     int i=0,nL1=0,nL2=0;;
     char text1[50];
        str[0]=0;
@@ -911,175 +584,52 @@ void main ()
    
    
      
-    printf("\n\n");
+   // printf("\n\n");
     newline:
     for(row=1;row<=9;row++)
     {
-       // sleep(1.155);
-        for(k=check;str[k]!='\0';k++)         // this loop print the patteRn horizontally
+      for(k=check;str[k]!='\0';k++)         // this loop print the patteRn horizontally
      {
-        if(str[k]=='A'||str[k]=='a')
-        {   printf("  ");
-            writeA(row);
-        }
-        else if(str[k]=='B'||str[k]=='b')
-        {    printf("  ");
-             writeB(row);
-        }
-        else if(str[k]=='C'||str[k]=='c')
-        {
-           printf("  ");
-           writeC(row);
-        }
-       else if(str[k]=='D'||str[k]=='d')
-        {
-          printf("  ");
-          writeD(row);
-        }
-        else if(str[k]=='E'||str[k]=='e')
-        {
-          printf("  ");
-          writeE(row);
-       }
-       else if(str[k]=='F'||str[k]=='f')
-        {
-          printf("  ");
-          writeF(row);
-       }
-
-
-       else if(str[k]=='G'||str[k]=='g')
-        {
-          printf("  ");
-          writeG(row);
-       }
-       else if(str[k]=='H'||str[k]=='h')
-        {
-          printf("  ");
-          writeH(row);
+         
+        if(str[k]=='A'||str[k]=='a')     { printf("  "); writeA(row);}
+        else if(str[k]=='B'||str[k]=='b'){ printf("  "); writeB(row);} 
+        else if(str[k]=='C'||str[k]=='c'){ printf("  "); writeC(row);}    
+        else if(str[k]=='D'||str[k]=='d'){ printf("  "); writeD(row);}  
+        else if(str[k]=='E'||str[k]=='e'){ printf("  "); writeE(row);}
+        else if(str[k]=='F'||str[k]=='f'){ printf("  "); writeF(row);}
+        else if(str[k]=='G'||str[k]=='g'){ printf("  "); writeG(row);}
+        else if(str[k]=='H'||str[k]=='h'){ printf("  "); writeH(row);}
+        else if(str[k]=='I'||str[k]=='i'){ printf("  "); writeI(row);}
+        else if(str[k]=='J'||str[k]=='j'){ printf("  "); writeJ(row);}
+        else if(str[k]=='K'||str[k]=='k'){ printf("  "); writeK(row);}
+        else if(str[k]=='L'||str[k]=='l'){ printf("  "); writeL(row);}
+        else if(str[k]=='M'||str[k]=='m'){ printf("  "); writeM(row);}
+        else if(str[k]=='N'||str[k]=='n'){ printf("  "); writeN(row);}
+        else if(str[k]=='O'||str[k]=='o'){ printf("  "); writeO(row);}
+        else if(str[k]=='P'||str[k]=='p'){ printf("  "); writeP(row);}
+        else if(str[k]=='Q'||str[k]=='q'){ printf("  "); writeQ(row);}
+        else if(str[k]=='R'||str[k]=='r'){ printf("  "); writeR(row);}
+        else if(str[k]=='S'||str[k]=='s'){ printf("  "); writeS(row);}
+        else if(str[k]=='T'||str[k]=='t'){ printf("  "); writeT(row);}
+        else if(str[k]=='U'||str[k]=='u'){ printf("  "); writeU(row);}
+        else if(str[k]=='V'||str[k]=='v'){ printf("  "); writeV(row);}
+        else if(str[k]=='W'||str[k]=='w'){ printf("  "); writeW(row);}
+        else if(str[k]=='X'||str[k]=='x'){ printf("  "); writeX(row);}
+        else if(str[k]=='Y'||str[k]=='y'){ printf("  "); writeY(row);}
+        else if(str[k]=='Z'||str[k]=='z'){ printf("  "); writeZ(row);}
+        else if(str[k]==' '){ writegap(row);}
+        else if(str[k]=='\n')
+       { if(str[k]=='\n'&&row==9){ printf("\n \n \n"); check=k+1; goto newline;}
+         else  break;
        }
 
-       else if(str[k]=='I'||str[k]=='i')
-        {
-          printf("  ");
-          writeI(row);
-       }
-
-       else if(str[k]=='J'||str[k]=='j')
-        {
-          printf("  ");
-          writeJ(row);
-       }
-
-       else if(str[k]=='K'||str[k]=='k')
-        {
-          printf("  ");
-          writeK(row);
-       }
-
-       else if(str[k]=='L'||str[k]=='l')
-        {
-          printf("  ");
-          writeL(row);
-       }
-       else if(str[k]=='M'||str[k]=='m')
-        {
-          printf("  ");
-          writeM(row);
-       }
-       else if(str[k]=='N'||str[k]=='n')
-        {
-          printf("  ");
-          writeN(row);
-       }
-       else if(str[k]=='O'||str[k]=='o')
-        {
-          printf("  ");
-          writeO(row);
-       }
-       else if(str[k]=='P'||str[k]=='p')
-        {
-          printf("  ");
-          writeP(row);
-       }
-       else if(str[k]=='Q'||str[k]=='q')
-        {
-          printf("  ");
-          writeQ(row);
-       }
-       else if(str[k]=='R'||str[k]=='r')
-        {
-          printf("  ");
-          writeR(row);
-       }
-       else if(str[k]=='S'||str[k]=='s')
-        {
-          printf("  ");
-          writeS(row);
-       }
-       else if(str[k]=='T'||str[k]=='t')
-        {
-          printf("  ");
-          writeT(row);
-       }
-       else if(str[k]=='U'||str[k]=='u')
-        {
-          printf("  ");
-          writeU(row);
-       }
-       else if(str[k]=='V'||str[k]=='v')
-        {
-          printf("  ");
-          writeV(row);
-       }
-       else if(str[k]=='W'||str[k]=='w')
-        {
-          printf("  ");
-          writeW(row);
-       }
-
-       else if(str[k]=='X'||str[k]=='x')
-        {
-          printf("  ");
-          writeX(row);
-       }
-
-         else if(str[k]=='Y'||str[k]=='y')
-        {
-          printf("  ");
-          writeY(row);
-       }
-
-         else if(str[k]=='Z'||str[k]=='z')
-        {
-          printf("  ");
-          writeZ(row);
-       }
-       else if(str[k]==' ')
-       {
-           writegap(row);
-       }
-       else if(str[k]=='\n')
-       {    if(str[k]=='\n'&&row==9)
-           {
-               printf("\n \n \n");
-                 check=k+1;
-               goto newline;
-           }
-           else  break;
-
-       }
-
-
-
-    }    printf("\n");
+     }    printf("\n");
 
      
     } 
     
-     check=0;
-    nL2=strlen(str);
-   
+    check=0;
+    nL2=strlen(str);   
     for(i=0;i<=nL2;i++)
    {
        str[i]='\0';
@@ -1087,6 +637,5 @@ void main ()
    }
      goto start;
 
+    }
 
-
-}
